@@ -24,43 +24,6 @@ class GamePage extends Component {
     })
   }
 
-  handleClick = (id) => {
-    console.log(`Card id: ${id}`);
-
-    const updatedCards = this.state.allCards.map(item => {
-      // If item in array's id is equal to the id of the card we clicked on
-      if(item.id === id){
-        // If item has not been clicked before
-        if(item.clicked === false){
-          item.clicked = true
-        }
-        // If item has been clicked before
-        else{
-          console.log("you lose");
-          this.setState({
-            gameOver: true
-          })
-        }
-      }
-      return item
-    }) 
-
-    // console.log(updatedCards);
-    
-    if(this.state.gameOver === false){
-      this.setState({
-        allCards: updatedCards
-      });
-    }
-    else{
-      this.setState({
-        allCards: allCards,
-        score: 0,
-        gameOver: false
-      })
-    }
-  }// end of handleClick =>
-
   render() {
     return (
     <div className="game-page">
@@ -71,8 +34,7 @@ class GamePage extends Component {
             <Card 
               card={thisCard} 
               key={thisCard.id} 
-              alt={thisCard.name} 
-              onClick={() => {this.handleClick(thisCard.id)}}
+              alt={thisCard.name}
             />
           ))}
         </div>
