@@ -1,0 +1,30 @@
+.content {
+  /* Sizing & Positioning */
+  margin-top: 80px; 
+
+
+  /* Styling */
+
+  /* Setup for child elements */
+  padding: 80px;
+
+
+  /* testing */
+  background-color: skyblue; 
+  color: white;
+}
+
+/* Area where you can click on cards */
+.game-area{
+
+  /* Setup for Child Elements */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* .game-area Child Elements */
+.game-area > *{
+  margin: 15px 23px;
+}

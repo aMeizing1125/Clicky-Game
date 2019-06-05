@@ -1,0 +1,57 @@
+/* General Navbar */
+.nav-bar {
+  /* Sizing & Positioning */
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  /* Styling */
+  background-color: #140B8B;
+  color: white;
+  font-size: 20px;
+
+  /* Setup for child elements */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Child elements of .nav-bar */
+.nav-bar > *{
+  margin: 0px 40px;
+}
+
+
+/* Navbar Title */
+
+.nav-title {
+  /* Sizing & Positioning */
+
+  /* Styling */
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 36px;
+
+
+}
+
+
+/* Navbar Status */
+.nav-status {
+  /* Sizing & Positioning */
+
+  
+  /* Styling */
+  font-family: 'Ranga', cursive;
+  font-size: 24px;
+}
+
+
+/* Navbar Score */
+.nav-score {
+  /* Styling & Positioning */
+
+  /* Styling */
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
